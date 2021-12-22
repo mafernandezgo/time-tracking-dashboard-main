@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+</head>
+<body>
+
+  <div class="cardsGrid">
+    <header>
+      <section class="userInfo">
+        <div><img class="avatar" src="./images/image-jeremy.png"></div>
+        <div>
+          <h5>Report for</h5>
+          <h2>Jeremy Robson</h2>
+        </div>
+      </section>
+      <section class="buttonFreq">
+        <button class="btn">Daily</button>
+        <button class="btn" >Weekly</button>
+        <button class="btn">Monthly</button>
+      </section>
+    </header>
+
+    <section class="work card">
+      <div class="wrapper">
+        <div class="cardinfo">
+          <div class="title">
+            <h3>Work</h3>
+            <img src="./images/icon-ellipsis.svg">
+          </div>
+          <div>
+            <h1>5hrs</h1> <!-- daily -->
+            <div class="footer">Previous - <span class="previous">7</span>hrs</div>
+          </div>
+        </div> <!-- daily -->
+      </div>
+    </section>
+
+    <section class="play card">
+      <div class="wrapper">
+        <div class="cardinfo">
+          <div class="title">
+            <h3>Play</h3>
+            <img src="./images/icon-ellipsis.svg">
+          </div>
+          <div>
+            <h1 class="current">1hr</h1> <!-- daily -->
+            <div class="footer">Previous - <span class="previous">2</span> hrs</div><!-- daily -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="study card">
+      <div class="wrapper">
+        <div class="cardinfo">
+          <div class="title">
+            <h3>Study</h3>
+            <img src="./images/icon-ellipsis.svg">
+          </div>
+          <div>
+            <h1>0hrs</h1> <!-- daily -->
+            <div class="footer"><div>Previous - </div> <div>1hr</div></div> <!-- daily -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="exercise card">
+      <div class="wrapper">
+        <div class="cardinfo">
+          <div class="title">
+            <h3>Exercise</h3>
+            <img src="./images/icon-ellipsis.svg">
+          </div>
+          <div>
+            <h1>1hr</h1> <!-- daily -->
+            <div class="footer"><div>Previous - </div> <div>1hr</div></div> <!-- daily -->
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="social card">
+      <div class="wrapper">
+        <div class="cardinfo">
+          <div class="title">
+            <h3>Social</h3>
+            <img src="./images/icon-ellipsis.svg">
+          </div>
+          <div>
+            <h1>1hr</h1> <!-- daily -->
+            <div class="footer"><div>Previous - </div> <div>3hrs</div></div> <!-- daily -->
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="selfcare card">
+      <div class="wrapper">
+        <div class="cardinfo">
+          <div class="title">
+            <h3>Self Care</h3>
+            <img src="./images/icon-ellipsis.svg">
+          </div>
+          <div>
+            <h1>0hrs</h1> <!-- daily -->
+            <div class="footer"><div>Previous - </div> <div>1hr</div></div> <!-- daily -->
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+</body>
+</html>
