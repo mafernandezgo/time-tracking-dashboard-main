@@ -25,9 +25,9 @@
         </div>
       </section>
       <section class="buttonFreq">
-        <button class="btn">Daily</button>
-        <button class="btn" >Weekly</button>
-        <button class="btn">Monthly</button>
+        <button data-period="daily" class="btn">Daily</button>
+        <button data-period="weekly" class="btn" >Weekly</button>
+        <button data-period="monthly" class="btn">Monthly</button>
       </section>
     </header>
 
@@ -39,10 +39,13 @@
             <img src="./images/icon-ellipsis.svg">
           </div>
           <div>
-            <h1>5hrs</h1> <!-- daily -->
-            <div class="footer">Previous - <span class="previous">7</span>hrs</div>
+            <h1> <span data-title="Work" class="current">5</span>hrs</h1> 
+            <div class="footer">
+              <span class="timeSpace">Previous -</span> 
+              <span data-title="Work" class="previous">7</span>hrs
+            </div>
           </div>
-        </div> <!-- daily -->
+        </div>
       </div>
     </section>
 
@@ -54,8 +57,11 @@
             <img src="./images/icon-ellipsis.svg">
           </div>
           <div>
-            <h1 class="current">1hr</h1> <!-- daily -->
-            <div class="footer">Previous - <span class="previous">2</span> hrs</div><!-- daily -->
+            <h1> <span data-title="Play" class="current">5</span>hrs</h1> 
+            <div class="footer">
+              <span class="timeSpace">Previous -</span> 
+              <span data-title="Play" class="previous">2</span> hrs
+            </div>
           </div>
         </div>
       </div>
@@ -69,13 +75,16 @@
             <img src="./images/icon-ellipsis.svg">
           </div>
           <div>
-            <h1>0hrs</h1> <!-- daily -->
-            <div class="footer"><div>Previous - </div> <div>1hr</div></div> <!-- daily -->
+            <h1> <span data-title="Study" class="current">5</span>hrs</h1> 
+            <div class="footer">
+              <span class="timeSpace">Previous - </span> 
+              <span data-title="Study" class="previous">1</span>hr
+            </div>
           </div>
         </div>
       </div>
     </section>
-
+    
     <section class="exercise card">
       <div class="wrapper">
         <div class="cardinfo">
@@ -84,8 +93,11 @@
             <img src="./images/icon-ellipsis.svg">
           </div>
           <div>
-            <h1>1hr</h1> <!-- daily -->
-            <div class="footer"><div>Previous - </div> <div>1hr</div></div> <!-- daily -->
+            <h1> <span data-title="Exercise" class="current">5</span>hrs</h1>
+            <div class="footer">
+              <span class="timeSpace">Previous - </span>  
+              <span data-title="Exercise" class="previous">1</span>hr
+            </div> 
           </div>
         </div>
       </div>
@@ -96,11 +108,14 @@
         <div class="cardinfo">
           <div class="title">
             <h3>Social</h3>
-            <img src="./images/icon-ellipsis.svg">
+            <img src="./images/icon-ellipsis.svg" alt="Profile picture">
           </div>
           <div>
-            <h1>1hr</h1> <!-- daily -->
-            <div class="footer"><div>Previous - </div> <div>3hrs</div></div> <!-- daily -->
+            <h1> <span data-title="Social" class="current">5</span>hrs</h1>
+            <div class="footer">
+              <span class="timeSpace">Previous - </span>  
+              <span data-title="Social" class="previous">1</span>hr
+            </div>
           </div>
         </div>
       </div>
@@ -114,13 +129,17 @@
             <img src="./images/icon-ellipsis.svg">
           </div>
           <div>
-            <h1>0hrs</h1> <!-- daily -->
-            <div class="footer"><div>Previous - </div> <div>1hr</div></div> <!-- daily -->
+            <h1> <span data-title="Self Care" class="current">5</span>hrs</h1>
+            <div class="footer">
+              <span class="timeSpace">Previous - </span>  
+              <span data-title="Self Care" class="previous">1</span>hr
+            </div>
           </div>
         </div>
       </div>
     </section>
   </div>
 
+<script type="text/javascript" src="./app.js"></script>
 </body>
 </html>
